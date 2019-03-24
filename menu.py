@@ -38,3 +38,4 @@ print self.options[index]["font"], self.options[index]["selected"]
 
 def updateScreenOptionsFonts( self ):
 for font in self.options:
+self.screen.blit( font[ "font" ], font[ "pos" ] )
