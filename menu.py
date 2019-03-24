@@ -24,3 +24,4 @@ posY = 150
 selected = 0
 collor = "green"
 
+for nameFont in fonts:
