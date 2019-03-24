@@ -23,3 +23,4 @@ posX = 320
 posY = 150
 selected = 0
 collor = "green"
+
