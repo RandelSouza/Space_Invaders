@@ -40,3 +40,4 @@ def updateScreenOptionsFonts( self ):
 for font in self.options:
 self.screen.blit( font[ "font" ], font[ "pos" ] )
 
+def drawAndUpdateMenu( self ):
