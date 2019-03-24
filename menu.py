@@ -30,3 +30,4 @@ self.options.append( { "font" : self.renderFont( nameFont, self.collors[ collor 
 posY += 100
 
 # mudar a cor das opcoes
+def changeOption( self, index, selected):
