@@ -18,3 +18,4 @@ def renderFont( self, nameFont, collor ):
 return self.font.render(nameFont, True, collor)
 
 def menuOptionsFonts( self ):
+fonts = ["Play", "Settings", "Credits", "Exit"]
