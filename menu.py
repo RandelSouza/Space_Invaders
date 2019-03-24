@@ -17,3 +17,4 @@ self.menuOptionsFonts()
 def renderFont( self, nameFont, collor ):
 return self.font.render(nameFont, True, collor)
 
+def menuOptionsFonts( self ):
