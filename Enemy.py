@@ -80,3 +80,4 @@ eventos.count += 1
 eventos.score = eventos.font.render("score: " + str(eventos.count), True, (0, 255, 0))
 
 # aumentar o life
+if eventos.count % 100 == 0:
