@@ -85,3 +85,4 @@ ship.heart_count += 1
 
 self.enemy_collide(ship)
 
+if c == 1:
