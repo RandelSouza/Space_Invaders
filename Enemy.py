@@ -28,3 +28,4 @@ y2 = 0
 
 for _ in range(number):
 if count == 5:
+count = 0
