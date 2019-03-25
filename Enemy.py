@@ -92,3 +92,4 @@ screen.blit(enemy.image2, enemy.get_rect())
 elif c == 3:
 screen.blit(enemy.image3, enemy.get_rect())
 else:
+screen.blit(enemy.image4, enemy.get_rect())
