@@ -12,3 +12,4 @@ self.width = width
 self.height = height
 self.speed = speed
 self.image =  pygame.transform.scale(pygame.image.load("image/aliensprite1.png").convert_alpha(), (40,40))
+self.image2 = pygame.transform.scale(pygame.image.load("image/ufo2.png").convert_alpha(), (50,50))
