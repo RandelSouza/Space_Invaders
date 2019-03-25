@@ -17,3 +17,4 @@ self.image3 = pygame.transform.scale(pygame.image.load("image/alien.png").conver
 self.image4 = pygame.transform.scale(pygame.image.load("image/alien2.png").convert_alpha(), (50,50))
 self.rect = self.get_rect()
 
+def get_rect(self):
