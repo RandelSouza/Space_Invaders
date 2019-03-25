@@ -72,3 +72,4 @@ self.update_coordinate_enemy(enemy)
 
 index2 = enemy.get_rect().collidelist(BULLETS)
 
+if index2 != -1:
