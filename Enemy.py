@@ -55,3 +55,4 @@ def update_coordinate_enemy(self, enemy):
 enemy.x += enemy.speed
 
 if enemy.x > LARGURA:
+enemy.y += 100
