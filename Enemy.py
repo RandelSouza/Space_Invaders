@@ -31,3 +31,4 @@ if count == 5:
 count = 0
 y2 += 35
 
+enemyObject = Enemy(LARGURA/2 - 250 + (count * 50), y2, 50, 50, 0.8)
