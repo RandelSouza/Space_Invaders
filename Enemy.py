@@ -78,3 +78,4 @@ BULLETS.remove(BULLETS[index2])
 shoot.sound2.play()
 eventos.count += 1
 eventos.score = eventos.font.render("score: " + str(eventos.count), True, (0, 255, 0))
+
