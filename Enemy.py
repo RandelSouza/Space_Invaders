@@ -65,3 +65,4 @@ def update_enemies(self, screen, c, shoot, eventos, ship, shot_enemy):
 direcao = 1
 
 if len(enemies) != 0:
+for enemy in enemies:
