@@ -81,3 +81,4 @@ eventos.score = eventos.font.render("score: " + str(eventos.count), True, (0, 25
 
 # aumentar o life
 if eventos.count % 100 == 0:
+ship.heart_count += 1
