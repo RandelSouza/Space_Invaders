@@ -53,3 +53,4 @@ ship.heart_count -= 1
 
 def update_coordinate_enemy(self, enemy):
 enemy.x += enemy.speed
+
