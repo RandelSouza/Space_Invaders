@@ -37,3 +37,4 @@ count += 1
 
 print time.time() - start_t
 
+def enemy_create_shot(self, shot_enemy, X, Y):
