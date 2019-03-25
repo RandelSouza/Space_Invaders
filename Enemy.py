@@ -36,3 +36,4 @@ enemies.append(enemyObject)
 count += 1
 
 print time.time() - start_t
+
