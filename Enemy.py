@@ -75,3 +75,4 @@ index2 = enemy.get_rect().collidelist(BULLETS)
 if index2 != -1:
 enemies.remove(enemy)
 BULLETS.remove(BULLETS[index2])
+shoot.sound2.play()
