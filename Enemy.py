@@ -83,3 +83,4 @@ eventos.score = eventos.font.render("score: " + str(eventos.count), True, (0, 25
 if eventos.count % 100 == 0:
 ship.heart_count += 1
 
+self.enemy_collide(ship)
