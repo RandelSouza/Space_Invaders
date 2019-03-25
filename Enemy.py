@@ -88,3 +88,4 @@ self.enemy_collide(ship)
 if c == 1:
 screen.blit(enemy.image, enemy.get_rect())
 elif c == 2:
+screen.blit(enemy.image2, enemy.get_rect())
