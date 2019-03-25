@@ -47,3 +47,4 @@ collide = ship.get_rect().collidelist(BULLETS_ENEMY)
 
 if collide != -1:
 BULLETS_ENEMY.remove(BULLETS_ENEMY[collide])
+if ship.heart_count >= 1:
