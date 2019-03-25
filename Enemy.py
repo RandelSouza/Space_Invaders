@@ -56,3 +56,4 @@ enemy.x += enemy.speed
 
 if enemy.x > LARGURA:
 enemy.y += 100
+enemy.x = 0
