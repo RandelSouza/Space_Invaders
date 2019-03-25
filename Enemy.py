@@ -43,3 +43,4 @@ BULLETS_ENEMY.append(pygame.Rect(X+16, Y-5, 25, 50))
 shot_enemy.sound.play()
 
 def enemy_collide(self, ship):
+collide = ship.get_rect().collidelist(BULLETS_ENEMY)
