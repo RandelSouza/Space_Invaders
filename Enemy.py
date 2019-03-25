@@ -84,3 +84,4 @@ if eventos.count % 100 == 0:
 ship.heart_count += 1
 
 self.enemy_collide(ship)
+
