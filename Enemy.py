@@ -18,3 +18,4 @@ self.image4 = pygame.transform.scale(pygame.image.load("image/alien2.png").conve
 self.rect = self.get_rect()
 
 def get_rect(self):
+return pygame.Rect(self.x, self.y, self.width, self.height)
