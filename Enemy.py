@@ -86,3 +86,4 @@ ship.heart_count += 1
 self.enemy_collide(ship)
 
 if c == 1:
+screen.blit(enemy.image, enemy.get_rect())
