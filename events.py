@@ -50,3 +50,4 @@ return main_game
 def eventMouseButtonDown(self, event, shoot, X, Y, max):
 if event.type == pygame.MOUSEBUTTONDOWN:
 self.eventButtonMouseLeft(event, shoot, X, Y, max)
+
