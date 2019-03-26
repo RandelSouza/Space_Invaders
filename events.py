@@ -47,3 +47,4 @@ if event.button == 3:
 main_game = 1
 return main_game
 
+def eventMouseButtonDown(self, event, shoot, X, Y, max):
