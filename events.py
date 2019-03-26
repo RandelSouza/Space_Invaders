@@ -42,3 +42,4 @@ if event.button == 1:
 print event
 self.insertBulletShip(shoot, X, Y, max)
 
+def eventButtonMouseRight(self, event, main_game):
