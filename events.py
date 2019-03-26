@@ -73,3 +73,4 @@ pass
 def eventKeyDownMenu(self, event, menu ):
 if event.type == pygame.KEYDOWN :
 self.eventKeyPressK_UP_menu( event, menu )
+self.eventKeyPressK_DOWN_menu( event, menu )
