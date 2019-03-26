@@ -80,3 +80,4 @@ for event in pygame.event.get():
 self.eventKeyDownMenu( event, menu )
 self.eventQuitMenu( event )
 main_game = self.eventMouseButtonDownMenu( event, main_game )
+return main_game
