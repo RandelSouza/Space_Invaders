@@ -23,3 +23,4 @@ self.removeBulletShip(shoot, X, Y, max)
 def eventKeyDown(self, event, shoot, X, Y, max):
 if event.type == pygame.KEYDOWN :
 self.eventKeyPressK_Space( event, shoot, X, Y, max)
+
