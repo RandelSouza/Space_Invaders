@@ -36,3 +36,4 @@ def insertBulletShip(self, shoot, X, Y, max):
 if len(BULLETS) < max:
 BULLETS.append(pygame.Rect(X+36, Y, 25, 50))
 self.shootSound(shoot)
+
