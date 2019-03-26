@@ -19,3 +19,4 @@ self.shootSound(shoot)
 def eventKeyPressK_Space(self, event, shoot, X, Y, max):
 if event.key == pygame.K_SPACE :
 self.removeBulletShip(shoot, X, Y, max)
+
