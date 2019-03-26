@@ -55,3 +55,4 @@ def eventMouseButtonDownMenu(self, event, main_game):
 if event.type == pygame.MOUSEBUTTONDOWN:
 return self.eventButtonMouseRight(event, main_game)
 
+def eventHandler(self, X, Y, shoot, max, main_game):
