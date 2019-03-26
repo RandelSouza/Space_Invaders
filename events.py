@@ -29,3 +29,4 @@ if event.type == QUIT:
 return 0
 
 def eventQuitMenu(self, event):
+if event.type == QUIT:
