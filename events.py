@@ -71,3 +71,4 @@ if event.key == pygame.K_DOWN:
 pass
 
 def eventKeyDownMenu(self, event, menu ):
+if event.type == pygame.KEYDOWN :
