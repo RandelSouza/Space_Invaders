@@ -58,3 +58,4 @@ return self.eventButtonMouseRight(event, main_game)
 def eventHandler(self, X, Y, shoot, max, main_game):
 for event in pygame.event.get():
 main_game = self.eventQuit( event )
+self.eventKeyDown( event, shoot, X, Y, max)
