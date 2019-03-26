@@ -33,3 +33,4 @@ if event.type == QUIT:
 exit()
 
 def insertBulletShip(self, shoot, X, Y, max):
+if len(BULLETS) < max:
