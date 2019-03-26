@@ -77,3 +77,4 @@ self.eventKeyPressK_DOWN_menu( event, menu )
 
 def eventHandlerMenu( self, main_game, menu ):
 for event in pygame.event.get():
+self.eventKeyDownMenu( event, menu )
