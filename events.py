@@ -62,3 +62,4 @@ self.eventKeyDown( event, shoot, X, Y, max)
 self.eventMouseButtonDown(event, shoot, X, Y, max)
 return main_game
 
+def eventKeyPressK_UP_menu( self , event, menu ):
