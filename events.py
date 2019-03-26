@@ -17,3 +17,4 @@ BULLETS.append(pygame.Rect(X+36, Y, 25, 50))
 self.shootSound(shoot)
 
 def eventKeyPressK_Space(self, event, shoot, X, Y, max):
+if event.key == pygame.K_SPACE :
