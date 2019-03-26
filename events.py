@@ -40,3 +40,4 @@ self.shootSound(shoot)
 def eventButtonMouseLeft(self, event, shoot, X, Y, max):
 if event.button == 1:
 print event
+self.insertBulletShip(shoot, X, Y, max)
