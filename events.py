@@ -9,3 +9,4 @@ self.count = 0
 self.score = self.font.render("score: " + str(self.count), True, (0, 255, 0))
 
 def shootSound(self, shoot):
+shoot.sound.play()
