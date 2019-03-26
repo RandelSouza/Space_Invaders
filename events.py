@@ -63,3 +63,4 @@ self.eventMouseButtonDown(event, shoot, X, Y, max)
 return main_game
 
 def eventKeyPressK_UP_menu( self , event, menu ):
+if event.key == pygame.K_UP:
