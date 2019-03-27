@@ -13,3 +13,4 @@ pygame.mixer.music.load("music/sound2.ogg")
 pygame.font.init()
 
 def limites_tela(self, X, Y):
+if X <= -10: X = 702
