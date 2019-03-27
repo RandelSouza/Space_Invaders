@@ -11,3 +11,4 @@ self.fps = pygame.time.Clock().tick(60)
 pygame.mixer.init()
 pygame.mixer.music.load("music/sound2.ogg")
 pygame.font.init()
+
