@@ -9,3 +9,4 @@ X = LARGURA / 2
 Y = ALTURA / 2
 enemies = []
 x2 = 0
+y2 = 0
