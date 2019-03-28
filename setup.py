@@ -7,3 +7,4 @@ BULLETS = []
 BULLETS_ENEMY = []
 X = LARGURA / 2
 Y = ALTURA / 2
+enemies = []
