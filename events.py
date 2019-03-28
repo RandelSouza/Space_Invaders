@@ -27,7 +27,7 @@ class Events(object):
 
     def eventQuit(self, event):
         if event.type == QUIT:
-return 0
+            return 0
 
 def eventQuitMenu(self, event):
 if event.type == QUIT:
