@@ -26,7 +26,7 @@ class Menu( object ):
 
         for nameFont in fonts:
             self.options.append( { "font" : self.renderFont( nameFont, self.collors[ collor ] ),
-"pos" : ( posX, posY ), "selected": selected } )
+                                    "pos" : ( posX, posY ), "selected": selected } )
 posY += 100
 
 # mudar a cor das opcoes
