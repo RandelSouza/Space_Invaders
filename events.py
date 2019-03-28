@@ -10,7 +10,7 @@ class Events(object):
 
 
     def shootSound(self, shoot):
-shoot.sound.play()
+        shoot.sound.play()
 
 def removeBulletShip(self, shoot, X, Y, max):
 if len(BULLETS) < max:
