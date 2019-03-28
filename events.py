@@ -64,7 +64,7 @@ class Events(object):
             return main_game
 
     def eventKeyPressK_UP_menu( self , event, menu ):
-if event.key == pygame.K_UP:
+        if event.key == pygame.K_UP:
 menu.changeOption(1, 1)
 
 def eventKeyPressK_DOWN_menu( self, event, menu ):
