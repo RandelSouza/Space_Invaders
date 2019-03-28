@@ -69,7 +69,7 @@ class Events(object):
 
     def eventKeyPressK_DOWN_menu( self, event, menu ):
         if event.key == pygame.K_DOWN:
-pass
+            pass
 
 def eventKeyDownMenu(self, event, menu ):
 if event.type == pygame.KEYDOWN :
