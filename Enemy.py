@@ -65,7 +65,7 @@ class Enemy(object):
 
         if len(enemies) != 0:
             for enemy in enemies:
-self.enemy_create_shot(shot_enemy, enemy.x, enemy.y)
+                self.enemy_create_shot(shot_enemy, enemy.x, enemy.y)
 
 self.update_coordinate_enemy(enemy)
 
