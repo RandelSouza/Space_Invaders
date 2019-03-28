@@ -12,7 +12,7 @@ class Screen(object):
         pygame.mixer.music.load("music/sound2.ogg")
         pygame.font.init()
 
-def limites_tela(self, X, Y):
+    def limites_tela(self, X, Y):
 if X <= -10: X = 702
 if X >= 704.99: X = 0
 if Y <= 422: Y = 422
