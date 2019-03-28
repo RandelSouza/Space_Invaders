@@ -14,3 +14,4 @@ count = 0
 c = False
 MAX = 3
 LIST_STRINGS = [ 'image/enemy_shoot_purple.png',
+'image/enemy_shoot_yellow.png',
