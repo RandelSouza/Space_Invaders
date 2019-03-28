@@ -31,9 +31,9 @@ class Enemy(object):
                 y2 += 35
             enemyObject = Enemy(LARGURA/2 - 250 + (count * 50), y2, 50, 50, 0.8)
             enemies.append(enemyObject)
-count += 1
+            count += 1
 
-print time.time() - start_t
+        print time.time() - start_t
 
 def enemy_create_shot(self, shot_enemy, X, Y):
 if len(BULLETS_ENEMY) < random.randint(1, 2):
