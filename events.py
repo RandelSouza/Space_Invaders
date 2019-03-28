@@ -30,7 +30,7 @@ class Events(object):
             return 0
 
     def eventQuitMenu(self, event):
-if event.type == QUIT:
+        if event.type == QUIT:
 exit()
 
 def insertBulletShip(self, shoot, X, Y, max):
