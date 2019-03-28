@@ -46,7 +46,7 @@ class Events(object):
     def eventButtonMouseRight(self, event, main_game):
         if event.button == 3:
             main_game = 1
-return main_game
+            return main_game
 
 def eventMouseButtonDown(self, event, shoot, X, Y, max):
 if event.type == pygame.MOUSEBUTTONDOWN:
