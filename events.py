@@ -14,7 +14,7 @@ class Events(object):
 
     def removeBulletShip(self, shoot, X, Y, max):
         if len(BULLETS) < max:
-BULLETS.append(pygame.Rect(X+36, Y, 25, 50))
+            BULLETS.append(pygame.Rect(X+36, Y, 25, 50))
 self.shootSound(shoot)
 
 def eventKeyPressK_Space(self, event, shoot, X, Y, max):
