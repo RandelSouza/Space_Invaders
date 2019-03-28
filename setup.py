@@ -10,3 +10,4 @@ Y = ALTURA / 2
 enemies = []
 x2 = 0
 y2 = 0
+count = 0
