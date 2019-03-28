@@ -77,17 +77,17 @@ class Enemy(object):
                     eventos.score = eventos.font.render("score: " + str(eventos.count), True, (0, 255, 0))
 
                     # aumentar o life
-if eventos.count % 100 == 0:
-ship.heart_count += 1
+                    if eventos.count % 100 == 0:
+                        ship.heart_count += 1
 
-self.enemy_collide(ship)
+                self.enemy_collide(ship)
 
-if c == 1:
-screen.blit(enemy.image, enemy.get_rect())
-elif c == 2:
-screen.blit(enemy.image2, enemy.get_rect())
-elif c == 3:
-screen.blit(enemy.image3, enemy.get_rect())
-else:
-screen.blit(enemy.image4, enemy.get_rect())
-return len(enemies)
+                if c == 1:
+                    screen.blit(enemy.image, enemy.get_rect())
+                elif c == 2:
+                    screen.blit(enemy.image2, enemy.get_rect())
+                elif c == 3:
+                    screen.blit(enemy.image3, enemy.get_rect())
+                else:
+                    screen.blit(enemy.image4, enemy.get_rect())
+        return len(enemies)
