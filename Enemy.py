@@ -17,7 +17,7 @@ class Enemy(object):
         self.image4 = pygame.transform.scale(pygame.image.load("image/alien2.png").convert_alpha(), (50,50))
         self.rect = self.get_rect()
 
-def get_rect(self):
+    def get_rect(self):
 return pygame.Rect(self.x, self.y, self.width, self.height)
 
 def create_enemies(self, number):
