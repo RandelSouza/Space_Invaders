@@ -18,3 +18,4 @@ LIST_STRINGS = [ 'image/enemy_shoot_purple.png',
 'image/enemy_shoot_red.png',
 'image/enemy_shoot_green.png',
 'image/enemy_shoot_blue2.png',
+'image/enemy_shoot_blue.png' ]
