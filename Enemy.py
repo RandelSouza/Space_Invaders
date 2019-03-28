@@ -8,7 +8,7 @@ class Enemy(object):
     def __init__(self, x , y, width, height, speed):
         self.x = x
         self.y = y
-self.width = width
+        self.width = width
 self.height = height
 self.speed = speed
 self.image =  pygame.transform.scale(pygame.image.load("image/aliensprite1.png").convert_alpha(), (40,40))
