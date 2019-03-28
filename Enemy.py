@@ -23,7 +23,7 @@ class Enemy(object):
     def create_enemies(self, number):
         start_t = time.time()
         global count, y2
-y2 = 0
+        y2 = 0
 
 for _ in range(number):
 if count == 5:
