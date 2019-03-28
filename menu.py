@@ -41,6 +41,6 @@ class Menu( object ):
             self.screen.blit( font[ "font" ], font[ "pos" ] )
 
     def drawAndUpdateMenu( self ):
-self.screen.blit( self.background, ( 0, 0 ) )
+        self.screen.blit( self.background, ( 0, 0 ) )
 self.updateScreenOptionsFonts()
 pygame.display.update()
