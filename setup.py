@@ -12,3 +12,4 @@ x2 = 0
 y2 = 0
 count = 0
 c = False
+MAX = 3
