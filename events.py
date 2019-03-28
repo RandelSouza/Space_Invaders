@@ -78,7 +78,7 @@ class Events(object):
 
     def eventHandlerMenu( self, main_game, menu ):
         for event in pygame.event.get():
-self.eventKeyDownMenu( event, menu )
+            self.eventKeyDownMenu( event, menu )
 self.eventQuitMenu( event )
 main_game = self.eventMouseButtonDownMenu( event, main_game )
 return main_game
