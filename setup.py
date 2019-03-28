@@ -13,3 +13,4 @@ y2 = 0
 count = 0
 c = False
 MAX = 3
+LIST_STRINGS = [ 'image/enemy_shoot_purple.png',
