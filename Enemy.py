@@ -25,7 +25,7 @@ class Enemy(object):
         global count, y2
         y2 = 0
 
-for _ in range(number):
+        for _ in range(number):
 if count == 5:
 count = 0
 y2 += 35
