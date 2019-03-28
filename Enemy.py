@@ -41,7 +41,7 @@ class Enemy(object):
             shot_enemy.sound.play()
 
     def enemy_collide(self, ship):
-collide = ship.get_rect().collidelist(BULLETS_ENEMY)
+        collide = ship.get_rect().collidelist(BULLETS_ENEMY)
 
 if collide != -1:
 BULLETS_ENEMY.remove(BULLETS_ENEMY[collide])
