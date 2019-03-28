@@ -19,7 +19,7 @@ class Events(object):
 
     def eventKeyPressK_Space(self, event, shoot, X, Y, max):
         if event.key == pygame.K_SPACE :
-self.removeBulletShip(shoot, X, Y, max)
+            self.removeBulletShip(shoot, X, Y, max)
 
 def eventKeyDown(self, event, shoot, X, Y, max):
 if event.type == pygame.KEYDOWN :
