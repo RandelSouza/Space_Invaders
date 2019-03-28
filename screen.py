@@ -10,7 +10,7 @@ class Screen(object):
         self.fps = pygame.time.Clock().tick(60)
         pygame.mixer.init()
         pygame.mixer.music.load("music/sound2.ogg")
-pygame.font.init()
+        pygame.font.init()
 
 def limites_tela(self, X, Y):
 if X <= -10: X = 702
