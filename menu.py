@@ -21,7 +21,7 @@ class Menu( object ):
         fonts = ["Play", "Settings", "Credits", "Exit"]
         posX = 320
         posY = 150
-selected = 0
+        selected = 0
 collor = "green"
 
 for nameFont in fonts:
