@@ -26,7 +26,7 @@ class Events(object):
             self.eventKeyPressK_Space( event, shoot, X, Y, max)
 
     def eventQuit(self, event):
-if event.type == QUIT:
+        if event.type == QUIT:
 return 0
 
 def eventQuitMenu(self, event):
