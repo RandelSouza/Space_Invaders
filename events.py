@@ -33,7 +33,7 @@ class Events(object):
         if event.type == QUIT:
             exit()
 
-def insertBulletShip(self, shoot, X, Y, max):
+    def insertBulletShip(self, shoot, X, Y, max):
 if len(BULLETS) < max:
 BULLETS.append(pygame.Rect(X+36, Y, 25, 50))
 self.shootSound(shoot)
