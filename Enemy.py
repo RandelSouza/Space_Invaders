@@ -60,7 +60,7 @@ class Enemy(object):
         if enemy.y >= 400:
             enemy.y = 0
 
-def update_enemies(self, screen, c, shoot, eventos, ship, shot_enemy):
+    def update_enemies(self, screen, c, shoot, eventos, ship, shot_enemy):
 direcao = 1
 
 if len(enemies) != 0:
