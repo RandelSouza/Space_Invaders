@@ -3,7 +3,7 @@ import pygame, sys, os
 from pygame.locals import *
 
 class Menu( object ):
-def __init__( self ):
+    def __init__( self ):
 self.init = pygame.init()
 self.font =  pygame.font.Font(None, 80)
 self.screen = pygame.display.set_mode( [ LARGURA, ALTURA ] )
