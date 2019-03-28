@@ -18,7 +18,7 @@ class Enemy(object):
         self.rect = self.get_rect()
 
     def get_rect(self):
-return pygame.Rect(self.x, self.y, self.width, self.height)
+        return pygame.Rect(self.x, self.y, self.width, self.height)
 
 def create_enemies(self, number):
 start_t = time.time()
