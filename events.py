@@ -81,4 +81,4 @@ class Events(object):
             self.eventKeyDownMenu( event, menu )
             self.eventQuitMenu( event )
             main_game = self.eventMouseButtonDownMenu( event, main_game )
-return main_game
+            return main_game
