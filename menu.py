@@ -24,7 +24,7 @@ class Menu( object ):
         selected = 0
         collor = "green"
 
-for nameFont in fonts:
+        for nameFont in fonts:
 self.options.append( { "font" : self.renderFont( nameFont, self.collors[ collor ] ),
 "pos" : ( posX, posY ), "selected": selected } )
 posY += 100
