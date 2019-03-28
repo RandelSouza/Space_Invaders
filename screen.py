@@ -9,7 +9,7 @@ class Screen(object):
         self.background =  pygame.image.load("scenarios/back_3.png").convert()
         self.fps = pygame.time.Clock().tick(60)
         pygame.mixer.init()
-pygame.mixer.music.load("music/sound2.ogg")
+        pygame.mixer.music.load("music/sound2.ogg")
 pygame.font.init()
 
 def limites_tela(self, X, Y):
