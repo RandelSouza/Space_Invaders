@@ -32,7 +32,7 @@ class Menu( object ):
     # mudar a cor das opcoes
     def changeOption( self, index, selected):
         if index < len(self.options) and  index >= 0:
-print self.options[index]["font"], self.options[index]["selected"]
+            print self.options[index]["font"], self.options[index]["selected"]
 self.options[index]["selected"] = selected
 print self.options[index]["font"], self.options[index]["selected"]
 
