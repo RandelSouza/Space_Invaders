@@ -36,7 +36,7 @@ class Events(object):
     def insertBulletShip(self, shoot, X, Y, max):
         if len(BULLETS) < max:
             BULLETS.append(pygame.Rect(X+36, Y, 25, 50))
-self.shootSound(shoot)
+            self.shootSound(shoot)
 
 def eventButtonMouseLeft(self, event, shoot, X, Y, max):
 if event.button == 1:
