@@ -17,4 +17,4 @@ class Screen(object):
         if X >= 704.99: X = 0
         if Y <= 422: Y = 422
         if Y > 499:   Y = 499
-return X, Y
+        return X, Y
