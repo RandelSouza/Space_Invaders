@@ -41,7 +41,7 @@ class Events(object):
     def eventButtonMouseLeft(self, event, shoot, X, Y, max):
         if event.button == 1:
             print event
-self.insertBulletShip(shoot, X, Y, max)
+            self.insertBulletShip(shoot, X, Y, max)
 
 def eventButtonMouseRight(self, event, main_game):
 if event.button == 3:
