@@ -67,8 +67,7 @@ class Enemy(object):
             for enemy in enemies:
                 self.enemy_create_shot(shot_enemy, enemy.x, enemy.y)
                 self.update_coordinate_enemy(enemy)
-
-index2 = enemy.get_rect().collidelist(BULLETS)
+                index2 = enemy.get_rect().collidelist(BULLETS)
 
 if index2 != -1:
 enemies.remove(enemy)
