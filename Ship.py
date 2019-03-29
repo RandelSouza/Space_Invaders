@@ -53,3 +53,4 @@ surface2.blit( surface1, rect )
 
 def update_position(self):
 self.draw_centered(self.images[self.sprit_number], self.screen, [self.x, self.y])
+
