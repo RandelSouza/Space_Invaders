@@ -110,3 +110,4 @@ else:
 self.moveDown()
 self.setSpritSound(sprit_number, maxTimeSound)
 
+def eventMoveRight(self):
