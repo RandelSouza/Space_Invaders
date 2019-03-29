@@ -80,3 +80,4 @@ self.x  += self.speed
 def moveLeft(self):
 self.x  -= self.speed
 
+def setSpritNumber(self, sprit_number):
