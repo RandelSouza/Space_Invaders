@@ -92,3 +92,4 @@ self.setSoundMaxTime(maxTimeSound)
 
 def moveUp(self):
 self.y  -= self.speed
+
