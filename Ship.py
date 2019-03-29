@@ -104,3 +104,4 @@ self.moveLeft()
 self.setSpritSound(sprit_number, maxTimeSound)
 
 def moveUpDown(self, up, sprit_number, maxTimeSound):
+if up:
