@@ -91,3 +91,4 @@ self.setSpritNumber(sprit_number)
 self.setSoundMaxTime(maxTimeSound)
 
 def moveUp(self):
+self.y  -= self.speed
