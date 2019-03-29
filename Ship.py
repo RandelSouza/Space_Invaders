@@ -8,3 +8,4 @@ self.images = []
 self.speed = speed
 self.setWidthAndHeight( width, height )
 self.setXandY(x, y)
+self.sprit_number = 1
