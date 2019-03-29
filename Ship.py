@@ -122,3 +122,4 @@ def eventMoveUp(self):
 if pygame.key.get_pressed()[pygame.K_UP] or pygame.key.get_pressed()[pygame.K_w]:
 self.moveUpDown(True, 1, 200)
 
+def eventMoveDown(self):
