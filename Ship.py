@@ -108,3 +108,4 @@ if up:
 self.moveUp()
 else:
 self.moveDown()
+self.setSpritSound(sprit_number, maxTimeSound)
