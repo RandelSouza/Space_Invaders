@@ -100,3 +100,4 @@ def moveRightLeft(self, right, sprit_number, maxTimeSound):
 if right:
 self.moveRight()
 else:
+self.moveLeft()
