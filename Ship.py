@@ -11,3 +11,4 @@ self.setXandY(x, y)
 self.sprit_number = 1
 self.get_images_array()
 self.setSounds()
+self.setHeart()
