@@ -78,3 +78,4 @@ def moveRight(self):
 self.x  += self.speed
 
 def moveLeft(self):
+self.x  -= self.speed
