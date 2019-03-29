@@ -126,3 +126,4 @@ def eventMoveDown(self):
 if pygame.key.get_pressed()[pygame.K_DOWN] or pygame.key.get_pressed()[pygame.K_s]:
 self.moveUpDown(False, 1, 200)
 
+def movimentacao_nave(self):
