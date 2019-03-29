@@ -43,3 +43,4 @@ def setXandY(self, x, y):
 self.setX(x)
 self.setY(y)
 
+def get_rect(self):
