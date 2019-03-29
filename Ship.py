@@ -45,3 +45,4 @@ self.setY(y)
 
 def get_rect(self):
 return pygame.Rect(self.x, self.y, self.width, self.height)
+
