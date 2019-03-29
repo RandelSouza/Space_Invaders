@@ -68,3 +68,4 @@ def appendImageInArray(self, pathImage):
 self.images.append( self.transformScaleImage( self.loadImage(pathImage) ) )
 
 def get_images_array(self):
+for indexImage in range(1, 4):
