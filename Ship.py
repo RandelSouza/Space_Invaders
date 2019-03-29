@@ -97,3 +97,4 @@ def moveDown(self):
 self.y  += self.speed
 
 def moveRightLeft(self, right, sprit_number, maxTimeSound):
+if right:
