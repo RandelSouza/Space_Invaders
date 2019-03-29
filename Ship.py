@@ -85,3 +85,4 @@ self.sprit_number = sprit_number
 
 def setSoundMaxTime(self, maxTimeSound):
 self.sound.play(0, maxTimeSound)
+
