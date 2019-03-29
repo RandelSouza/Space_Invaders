@@ -30,3 +30,4 @@ def setHeight(self, height):
 self.height = height
 
 def setWidthAndHeight(self, width, height):
+self.setWidth(width)
