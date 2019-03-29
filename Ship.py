@@ -115,3 +115,4 @@ if pygame.key.get_pressed()[pygame.K_RIGHT] or pygame.key.get_pressed()[pygame.K
 self.moveRightLeft(True, 2, 200)
 
 def eventMoveLeft(self):
+if pygame.key.get_pressed()[pygame.K_LEFT] or pygame.key.get_pressed()[pygame.K_a]:
