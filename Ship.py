@@ -59,3 +59,4 @@ for life in range(self.heart_count):
 self.draw_centered(self.heart, self.screen, [-10 + 30 * life, -10])
 
 def loadImage(self, pathImage):
+return pygame.image.load(pathImage)
