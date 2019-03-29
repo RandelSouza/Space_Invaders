@@ -62,3 +62,4 @@ def loadImage(self, pathImage):
 return pygame.image.load(pathImage)
 
 def transformScaleImage(self, image):
+return pygame.transform.scale(image, (self.width, self.height) )
