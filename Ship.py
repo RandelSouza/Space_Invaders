@@ -49,3 +49,4 @@ return pygame.Rect(self.x, self.y, self.width, self.height)
 def draw_centered(self, surface1, surface2, position):
 rect = surface1.get_rect()
 rect = rect.move( position[0], position[1] )
+surface2.blit( surface1, rect )
