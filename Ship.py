@@ -39,3 +39,4 @@ self.x = x
 def setY(self, y):
 self.y = y
 
+def setXandY(self, x, y):
