@@ -130,3 +130,4 @@ def movimentacao_nave(self):
 self.eventMoveRight()
 self.eventMoveLeft()
 self.eventMoveUp()
+self.eventMoveDown()
