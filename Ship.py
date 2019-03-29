@@ -19,3 +19,4 @@ def setHeart(self):
 self.heart = pygame.image.load("image/heart.png")
 self.heart_count = 10
 
+def setSounds(self):
