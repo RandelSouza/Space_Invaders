@@ -15,3 +15,4 @@ self.setHeart()
 self.rect = self.get_rect()
 pygame.mixer.music.set_volume(0.2)
 
+def setHeart(self):
