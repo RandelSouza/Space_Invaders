@@ -101,3 +101,4 @@ if right:
 self.moveRight()
 else:
 self.moveLeft()
+self.setSpritSound(sprit_number, maxTimeSound)
