@@ -90,3 +90,4 @@ def setSpritSound(self, sprit_number, maxTimeSound):
 self.setSpritNumber(sprit_number)
 self.setSoundMaxTime(maxTimeSound)
 
+def moveUp(self):
