@@ -34,3 +34,4 @@ self.setWidth(width)
 self.setHeight(height)
 
 def setX(self, x):
+self.x = x
