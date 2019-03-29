@@ -76,3 +76,4 @@ self.appendImageInArray( "image/ship%i.png" %( indexImage + 1) )
 
 def moveRight(self):
 self.x  += self.speed
+
