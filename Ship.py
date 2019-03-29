@@ -21,3 +21,4 @@ self.heart_count = 10
 
 def setSounds(self):
 self.sound = pygame.mixer.Sound("music/wind1.wav")
+self.sound2 = pygame.mixer.Sound("music/Explosion_01.wav")
