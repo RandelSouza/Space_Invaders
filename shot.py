@@ -15,3 +15,4 @@ self.sound.set_volume(0.1)
 self.setImage()
 
 def setImage( self ):
+for pathImage in LIST_STRINGS:
