@@ -20,3 +20,4 @@ self.image.append( pygame.transform.scale( pygame.image.load( pathImage ).conver
 
 def moveBullet(self, bullet):
 bullet[1] -= self.speed
+
