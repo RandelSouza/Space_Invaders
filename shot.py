@@ -27,3 +27,4 @@ BULLETS.remove(bullet)
 
 def drawBullet(self, image, bullet, screen):
 screen.blit(image, bullet)
+
