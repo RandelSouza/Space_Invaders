@@ -18,3 +18,4 @@ def setImage( self ):
 for pathImage in LIST_STRINGS:
 self.image.append( pygame.transform.scale( pygame.image.load( pathImage ).convert_alpha(), ( 25, 25 ) ) )
 
+def moveBullet(self, bullet):
