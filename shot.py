@@ -26,3 +26,4 @@ if bullet[1] < -50:
 BULLETS.remove(bullet)
 
 def drawBullet(self, image, bullet, screen):
+screen.blit(image, bullet)
