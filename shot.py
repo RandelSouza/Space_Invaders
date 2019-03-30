@@ -14,3 +14,4 @@ self.sound2.set_volume(0.1)
 self.sound.set_volume(0.1)
 self.setImage()
 
+def setImage( self ):
