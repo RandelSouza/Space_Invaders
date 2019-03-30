@@ -33,3 +33,4 @@ if len(BULLETS) != 0:
 for bullet in BULLETS:
 self.moveBullet(bullet)
 self.removeBullet(bullet)
+self.drawBullet(self.image[4], bullet, screen)                            
