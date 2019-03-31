@@ -25,3 +25,4 @@ BULLETS_ENEMY.remove(bullet_enemy)
 #    bullet_enemy[0] += self.speed
 #else:
 #    bullet_enemy[0] -= self.speed
+#screen.blit(self.image2, bullet_enemy)
