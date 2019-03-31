@@ -14,3 +14,4 @@ self.sound.set_volume(0.1)
 
 def update_bullets(self, screen, ship):
 if len(BULLETS_ENEMY) != 0:
+for bullet_enemy in BULLETS_ENEMY:
