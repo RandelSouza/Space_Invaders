@@ -21,3 +21,4 @@ if bullet_enemy[1] > ALTURA:
 BULLETS_ENEMY.remove(bullet_enemy)
 
 # decidir de coloco ou nao
+#if random.randint(1, 2) % 2 == 0:
