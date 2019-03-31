@@ -24,3 +24,4 @@ BULLETS_ENEMY.remove(bullet_enemy)
 #if random.randint(1, 2) % 2 == 0:
 #    bullet_enemy[0] += self.speed
 #else:
+#    bullet_enemy[0] -= self.speed
