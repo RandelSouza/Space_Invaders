@@ -16,3 +16,4 @@ def update_bullets(self, screen, ship):
 if len(BULLETS_ENEMY) != 0:
 for bullet_enemy in BULLETS_ENEMY:
 bullet_enemy[1] += self.speed
+
