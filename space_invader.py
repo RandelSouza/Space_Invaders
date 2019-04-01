@@ -15,3 +15,4 @@ os.environ['SDL_VIDEO_CENTERED'] = '1'
 menu = Menu()
 tela = Screen()
 ship = Ship(LARGURA/2, ALTURA/2, 100, 100, 1.8, tela.screen)
+shot = Shot()
