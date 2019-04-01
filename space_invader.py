@@ -50,3 +50,4 @@ elif spriteEnemy == 3:
 spriteEnemy = 4
 else:
 spriteEnemy = 1
+
