@@ -52,3 +52,4 @@ else:
 spriteEnemy = 1
 
 enemies_quantity = enemy.update_enemies(tela.screen, spriteEnemy, shot, events, ship, shotEnemy)
+
