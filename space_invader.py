@@ -7,3 +7,4 @@ from screen import *
 from events import *
 from Enemy import *
 from Ship import *
+from menu import *
