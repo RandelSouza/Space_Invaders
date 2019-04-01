@@ -5,3 +5,4 @@ from shot import *
 from setup import *
 from screen import *
 from events import *
+from Enemy import *
