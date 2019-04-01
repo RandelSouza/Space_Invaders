@@ -10,3 +10,4 @@ from Ship import *
 from menu import *
 from shot_enemy import *
 
+os.environ['SDL_VIDEO_CENTERED'] = '1'
