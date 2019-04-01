@@ -22,3 +22,4 @@ shotEnemy = ShotEnemy()
 number = 20
 spriteEnemy = 1
 max_shot = 3
+main_game = 0
