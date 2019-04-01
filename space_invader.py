@@ -40,3 +40,4 @@ tela.screen.blit(tela.background, (0,0))
 shot.update_bullets(tela.screen)
 shotEnemy.update_bullets(tela.screen, ship)
 
+if enemies_quantity == 0:
