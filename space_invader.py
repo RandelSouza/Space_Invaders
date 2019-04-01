@@ -56,3 +56,4 @@ enemies_quantity = enemy.update_enemies(tela.screen, spriteEnemy, shot, events, 
 ship.movimentacao_nave()
 ship.x, ship.y = tela.limites_tela(ship.x, ship.y)
 ship.update_position()
+ship.update_heart()
