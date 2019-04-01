@@ -12,3 +12,4 @@ from shot_enemy import *
 
 os.environ['SDL_VIDEO_CENTERED'] = '1'
 
+menu = Menu()
