@@ -59,3 +59,4 @@ ship.update_position()
 ship.update_heart()
 
 tela.screen.blit(events.score,  (600, 0))
+pygame.display.update()
