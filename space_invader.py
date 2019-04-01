@@ -31,3 +31,4 @@ menu.drawAndUpdateMenu()
 
 if main_game == 1:
 while True:
+if main_game == 0:
