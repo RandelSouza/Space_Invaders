@@ -19,3 +19,4 @@ shot = Shot()
 enemy = Enemy(0,0,0,0,0)
 events = Events()
 shotEnemy = ShotEnemy()
+number = 20
