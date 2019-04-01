@@ -28,3 +28,4 @@ enemies_quantity = 0
 while True:
 main_game = events.eventHandlerMenu(main_game, menu)
 menu.drawAndUpdateMenu()
+
