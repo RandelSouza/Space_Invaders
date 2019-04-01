@@ -30,3 +30,4 @@ main_game = events.eventHandlerMenu(main_game, menu)
 menu.drawAndUpdateMenu()
 
 if main_game == 1:
+while True:
