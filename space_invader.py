@@ -36,3 +36,4 @@ break
 
 main_game = events.eventHandler(ship.x, ship.y, shot, max_shot, main_game)
 
+tela.screen.blit(tela.background, (0,0))
