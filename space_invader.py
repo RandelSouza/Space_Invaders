@@ -41,3 +41,4 @@ shot.update_bullets(tela.screen)
 shotEnemy.update_bullets(tela.screen, ship)
 
 if enemies_quantity == 0:
+enemy.create_enemies(number)
