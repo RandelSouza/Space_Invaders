@@ -22,7 +22,7 @@ class Shot(object):
         bullet[1] -= self.speed
 
     def removeBullet(self, bullet):
-if bullet[1] < -50:
+        if bullet[1] < -50:
 BULLETS.remove(bullet)
 
 def drawBullet(self, image, bullet, screen):
