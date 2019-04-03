@@ -41,7 +41,7 @@ class Ship(object):
 
     def setXandY(self, x, y):
         self.setX(x)
-self.setY(y)
+        self.setY(y)
 
 def get_rect(self):
 return pygame.Rect(self.x, self.y, self.width, self.height)
