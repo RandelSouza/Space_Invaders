@@ -87,8 +87,8 @@ class Ship(object):
         self.sound.play(0, maxTimeSound)
 
     def setSpritSound(self, sprit_number, maxTimeSound):
-self.setSpritNumber(sprit_number)
-self.setSoundMaxTime(maxTimeSound)
+        self.setSpritNumber(sprit_number)
+        self.setSoundMaxTime(maxTimeSound)
 
 def moveUp(self):
 self.y  -= self.speed
