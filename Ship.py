@@ -91,7 +91,7 @@ class Ship(object):
         self.setSoundMaxTime(maxTimeSound)
 
     def moveUp(self):
-self.y  -= self.speed
+        self.y  -= self.speed
 
 def moveDown(self):
 self.y  += self.speed
