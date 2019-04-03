@@ -47,8 +47,8 @@ while True:
             elif spriteEnemy == 2:
                 spriteEnemy = 3
             elif spriteEnemy == 3:
-        spriteEnemy = 4
-    else:
+                spriteEnemy = 4
+            else:
         spriteEnemy = 1
 
     enemies_quantity = enemy.update_enemies(tela.screen, spriteEnemy, shot, events, ship, shotEnemy)
