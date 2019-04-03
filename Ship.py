@@ -5,7 +5,7 @@ class Ship(object):
     def __init__(self, x, y, width, height, speed, screen):
         self.screen = screen
         self.images = []
-self.speed = speed
+        self.speed = speed
 self.setWidthAndHeight( width, height )
 self.setXandY(x, y)
 self.sprit_number = 1
