@@ -17,7 +17,7 @@ class ShotEnemy(object):
             for bullet_enemy in BULLETS_ENEMY:
                 bullet_enemy[1] += self.speed
 
-if bullet_enemy[1] > ALTURA:
+                if bullet_enemy[1] > ALTURA:
 BULLETS_ENEMY.remove(bullet_enemy)
 
 # decidir de coloco ou nao
