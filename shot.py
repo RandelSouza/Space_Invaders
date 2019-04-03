@@ -29,7 +29,7 @@ class Shot(object):
         screen.blit(image, bullet)
 
     def update_bullets(self, screen):
-if len(BULLETS) != 0:
+        if len(BULLETS) != 0:
 for bullet in BULLETS:
 self.moveBullet(bullet)
 self.removeBullet(bullet)
