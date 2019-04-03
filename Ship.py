@@ -69,7 +69,7 @@ class Ship(object):
 
     def get_images_array(self):
         for indexImage in range(1, 4):
-self.appendImageInArray( "image/redfighter000%i.png" %( indexImage + 3 ) )
+            self.appendImageInArray( "image/redfighter000%i.png" %( indexImage + 3 ) )
 
 for indexImage in range(1, 4):
 self.appendImageInArray( "image/ship%i.png" %( indexImage + 1) )
