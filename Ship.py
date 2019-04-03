@@ -6,7 +6,7 @@ class Ship(object):
         self.screen = screen
         self.images = []
         self.speed = speed
-self.setWidthAndHeight( width, height )
+        self.setWidthAndHeight( width, height )
 self.setXandY(x, y)
 self.sprit_number = 1
 self.get_images_array()
