@@ -116,7 +116,7 @@ class Ship(object):
 
     def eventMoveLeft(self):
         if pygame.key.get_pressed()[pygame.K_LEFT] or pygame.key.get_pressed()[pygame.K_a]:
-self.moveRightLeft(False, 0, 200)
+            self.moveRightLeft(False, 0, 200)
 
 def eventMoveUp(self):
 if pygame.key.get_pressed()[pygame.K_UP] or pygame.key.get_pressed()[pygame.K_w]:
