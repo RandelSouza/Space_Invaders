@@ -110,7 +110,7 @@ class Ship(object):
             self.moveDown()
             self.setSpritSound(sprit_number, maxTimeSound)
 
-def eventMoveRight(self):
+    def eventMoveRight(self):
 if pygame.key.get_pressed()[pygame.K_RIGHT] or pygame.key.get_pressed()[pygame.K_d]:
 self.moveRightLeft(True, 2, 200)
 
