@@ -71,7 +71,7 @@ class Ship(object):
         for indexImage in range(1, 4):
             self.appendImageInArray( "image/redfighter000%i.png" %( indexImage + 3 ) )
 
-for indexImage in range(1, 4):
+        for indexImage in range(1, 4):
 self.appendImageInArray( "image/ship%i.png" %( indexImage + 1) )
 
 def moveRight(self):
