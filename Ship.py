@@ -33,7 +33,7 @@ class Ship(object):
         self.setWidth(width)
         self.setHeight(height)
 
-def setX(self, x):
+    def setX(self, x):
 self.x = x
 
 def setY(self, y):
