@@ -107,7 +107,7 @@ class Ship(object):
         if up:
             self.moveUp()
         else:
-self.moveDown()
+            self.moveDown()
 self.setSpritSound(sprit_number, maxTimeSound)
 
 def eventMoveRight(self):
