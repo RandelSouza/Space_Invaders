@@ -30,7 +30,7 @@ while True:
     menu.drawAndUpdateMenu()
 
     if main_game == 1:
-while True:
+        while True:
 if main_game == 0:
 break
 
