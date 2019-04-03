@@ -54,7 +54,7 @@ class Ship(object):
     def update_position(self):
         self.draw_centered(self.images[self.sprit_number], self.screen, [self.x, self.y])
 
-def update_heart(self):
+    def update_heart(self):
 for life in range(self.heart_count):
 self.draw_centered(self.heart, self.screen, [-10 + 30 * life, -10])
 
