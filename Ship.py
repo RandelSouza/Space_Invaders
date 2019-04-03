@@ -21,7 +21,7 @@ class Ship(object):
 
     def setSounds(self):
         self.sound = pygame.mixer.Sound("music/wind1.wav")
-self.sound2 = pygame.mixer.Sound("music/Explosion_01.wav")
+        self.sound2 = pygame.mixer.Sound("music/Explosion_01.wav")
 
 def setWidth(self, width):
 self.width = width
