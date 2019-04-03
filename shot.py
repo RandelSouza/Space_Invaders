@@ -21,7 +21,7 @@ class Shot(object):
     def moveBullet(self, bullet):
         bullet[1] -= self.speed
 
-def removeBullet(self, bullet):
+    def removeBullet(self, bullet):
 if bullet[1] < -50:
 BULLETS.remove(bullet)
 
