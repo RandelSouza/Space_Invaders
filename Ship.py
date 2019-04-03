@@ -59,9 +59,9 @@ class Ship(object):
             self.draw_centered(self.heart, self.screen, [-10 + 30 * life, -10])
 
     def loadImage(self, pathImage):
-return pygame.image.load(pathImage)
+        return pygame.image.load(pathImage)
 
-def transformScaleImage(self, image):
+    def transformScaleImage(self, image):
 return pygame.transform.scale(image, (self.width, self.height) )
 
 def appendImageInArray(self, pathImage):
