@@ -67,8 +67,8 @@ class Ship(object):
     def appendImageInArray(self, pathImage):
         self.images.append( self.transformScaleImage( self.loadImage(pathImage) ) )
 
-def get_images_array(self):
-for indexImage in range(1, 4):
+    def get_images_array(self):
+        for indexImage in range(1, 4):
 self.appendImageInArray( "image/redfighter000%i.png" %( indexImage + 3 ) )
 
 for indexImage in range(1, 4):
