@@ -129,5 +129,5 @@ class Ship(object):
     def movimentacao_nave(self):
         self.eventMoveRight()
         self.eventMoveLeft()
-self.eventMoveUp()
+        self.eventMoveUp()
 self.eventMoveDown()
