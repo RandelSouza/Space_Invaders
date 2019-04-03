@@ -10,7 +10,7 @@ class Ship(object):
         self.setXandY(x, y)
         self.sprit_number = 1
         self.get_images_array()
-self.setSounds()
+        self.setSounds()
 self.setHeart()
 self.rect = self.get_rect()
 pygame.mixer.music.set_volume(0.2)
