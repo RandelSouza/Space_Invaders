@@ -26,7 +26,7 @@ main_game = 0
 enemies_quantity = 0
 
 while True:
-main_game = events.eventHandlerMenu(main_game, menu)
+    main_game = events.eventHandlerMenu(main_game, menu)
 menu.drawAndUpdateMenu()
 
 if main_game == 1:
