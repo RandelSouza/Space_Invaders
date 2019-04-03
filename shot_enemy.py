@@ -12,7 +12,7 @@ class ShotEnemy(object):
         self.sound2.set_volume(0.1)
         self.sound.set_volume(0.1)
 
-def update_bullets(self, screen, ship):
+    def update_bullets(self, screen, ship):
 if len(BULLETS_ENEMY) != 0:
 for bullet_enemy in BULLETS_ENEMY:
 bullet_enemy[1] += self.speed
