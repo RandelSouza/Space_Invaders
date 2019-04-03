@@ -55,7 +55,7 @@ while True:
 
             ship.movimentacao_nave()
             ship.x, ship.y = tela.limites_tela(ship.x, ship.y)
-    ship.update_position()
+            ship.update_position()
     ship.update_heart()
 
     tela.screen.blit(events.score,  (600, 0))
