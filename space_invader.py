@@ -45,7 +45,7 @@ while True:
     if spriteEnemy == 1:
         spriteEnemy = 2
     elif spriteEnemy == 2:
-spriteEnemy = 3
+        spriteEnemy = 3
 elif spriteEnemy == 3:
 spriteEnemy = 4
 else:
