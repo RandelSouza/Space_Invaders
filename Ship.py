@@ -130,4 +130,4 @@ class Ship(object):
         self.eventMoveRight()
         self.eventMoveLeft()
         self.eventMoveUp()
-self.eventMoveDown()
+        self.eventMoveDown()
