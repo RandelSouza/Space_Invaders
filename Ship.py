@@ -97,7 +97,7 @@ class Ship(object):
         self.y  += self.speed
 
     def moveRightLeft(self, right, sprit_number, maxTimeSound):
-if right:
+        if right:
 self.moveRight()
 else:
 self.moveLeft()
