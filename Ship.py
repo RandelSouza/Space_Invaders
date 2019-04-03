@@ -49,7 +49,7 @@ class Ship(object):
     def draw_centered(self, surface1, surface2, position):
         rect = surface1.get_rect()
         rect = rect.move( position[0], position[1] )
-surface2.blit( surface1, rect )
+        surface2.blit( surface1, rect )
 
 def update_position(self):
 self.draw_centered(self.images[self.sprit_number], self.screen, [self.x, self.y])
