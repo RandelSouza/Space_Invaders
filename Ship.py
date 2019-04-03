@@ -78,7 +78,7 @@ class Ship(object):
         self.x  += self.speed
 
     def moveLeft(self):
-self.x  -= self.speed
+        self.x  -= self.speed
 
 def setSpritNumber(self, sprit_number):
 self.sprit_number = sprit_number
