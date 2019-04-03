@@ -59,4 +59,4 @@ while True:
     ship.update_heart()
 
     tela.screen.blit(events.score,  (600, 0))
-pygame.display.update()
+    pygame.display.update()
