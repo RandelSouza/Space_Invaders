@@ -74,7 +74,7 @@ class Ship(object):
         for indexImage in range(1, 4):
             self.appendImageInArray( "image/ship%i.png" %( indexImage + 1) )
 
-def moveRight(self):
+    def moveRight(self):
 self.x  += self.speed
 
 def moveLeft(self):
