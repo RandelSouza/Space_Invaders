@@ -44,7 +44,7 @@ while True:
                 enemy.create_enemies(number)
             if spriteEnemy == 1:
                 spriteEnemy = 2
-    elif spriteEnemy == 2:
+            elif spriteEnemy == 2:
         spriteEnemy = 3
     elif spriteEnemy == 3:
         spriteEnemy = 4
