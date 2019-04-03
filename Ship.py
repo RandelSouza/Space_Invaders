@@ -15,7 +15,7 @@ class Ship(object):
         self.rect = self.get_rect()
         pygame.mixer.music.set_volume(0.2)
 
-def setHeart(self):
+    def setHeart(self):
 self.heart = pygame.image.load("image/heart.png")
 self.heart_count = 10
 
