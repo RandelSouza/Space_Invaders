@@ -43,7 +43,7 @@ class Ship(object):
         self.setX(x)
         self.setY(y)
 
-def get_rect(self):
+    def get_rect(self):
 return pygame.Rect(self.x, self.y, self.width, self.height)
 
 def draw_centered(self, surface1, surface2, position):
