@@ -49,9 +49,9 @@ while True:
     elif spriteEnemy == 3:
         spriteEnemy = 4
     else:
-spriteEnemy = 1
+        spriteEnemy = 1
 
-enemies_quantity = enemy.update_enemies(tela.screen, spriteEnemy, shot, events, ship, shotEnemy)
+    enemies_quantity = enemy.update_enemies(tela.screen, spriteEnemy, shot, events, ship, shotEnemy)
 
 ship.movimentacao_nave()
 ship.x, ship.y = tela.limites_tela(ship.x, ship.y)
