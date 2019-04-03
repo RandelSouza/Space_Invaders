@@ -29,7 +29,7 @@ class Ship(object):
     def setHeight(self, height):
         self.height = height
 
-def setWidthAndHeight(self, width, height):
+    def setWidthAndHeight(self, width, height):
 self.setWidth(width)
 self.setHeight(height)
 
