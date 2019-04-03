@@ -31,7 +31,7 @@ while True:
 
     if main_game == 1:
         while True:
-if main_game == 0:
+    if main_game == 0:
 break
 
 main_game = events.eventHandler(ship.x, ship.y, shot, max_shot, main_game)
