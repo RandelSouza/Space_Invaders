@@ -24,6 +24,6 @@ class ShotEnemy(object):
                     #if random.randint(1, 2) % 2 == 0:
                     #    bullet_enemy[0] += self.speed
                     #else:
-#    bullet_enemy[0] -= self.speed
+                    #    bullet_enemy[0] -= self.speed
 #screen.blit(self.image2, bullet_enemy)
 screen.blit(self.image, bullet_enemy)
