@@ -25,5 +25,5 @@ class ShotEnemy(object):
                     #    bullet_enemy[0] += self.speed
                     #else:
                     #    bullet_enemy[0] -= self.speed
-#screen.blit(self.image2, bullet_enemy)
+                    #screen.blit(self.image2, bullet_enemy)
 screen.blit(self.image, bullet_enemy)
