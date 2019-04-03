@@ -39,7 +39,7 @@ class Ship(object):
     def setY(self, y):
         self.y = y
 
-def setXandY(self, x, y):
+    def setXandY(self, x, y):
 self.setX(x)
 self.setY(y)
 
