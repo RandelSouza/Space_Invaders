@@ -11,7 +11,7 @@ class Shot(object):
         self.sound = pygame.mixer.Sound("music/Shoot_00.wav")
         self.sound2 = pygame.mixer.Sound("music/Explosion_01.wav")
         self.sound2.set_volume(0.1)
-self.sound.set_volume(0.1)
+        self.sound.set_volume(0.1)
 self.setImage()
 
 def setImage( self ):
