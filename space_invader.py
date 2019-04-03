@@ -29,7 +29,7 @@ while True:
     main_game = events.eventHandlerMenu(main_game, menu)
     menu.drawAndUpdateMenu()
 
-if main_game == 1:
+    if main_game == 1:
 while True:
 if main_game == 0:
 break
