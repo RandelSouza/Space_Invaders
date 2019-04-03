@@ -83,7 +83,7 @@ class Ship(object):
     def setSpritNumber(self, sprit_number):
         self.sprit_number = sprit_number
 
-def setSoundMaxTime(self, maxTimeSound):
+    def setSoundMaxTime(self, maxTimeSound):
 self.sound.play(0, maxTimeSound)
 
 def setSpritSound(self, sprit_number, maxTimeSound):
