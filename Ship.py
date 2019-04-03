@@ -65,7 +65,7 @@ class Ship(object):
         return pygame.transform.scale(image, (self.width, self.height) )
 
     def appendImageInArray(self, pathImage):
-self.images.append( self.transformScaleImage( self.loadImage(pathImage) ) )
+        self.images.append( self.transformScaleImage( self.loadImage(pathImage) ) )
 
 def get_images_array(self):
 for indexImage in range(1, 4):
