@@ -46,3 +46,5 @@ class Menu( object ):
         pygame.display.update()
 
         # deixar botoes usaveis
+        # add as novas funcionalidades dos botoes
+        
