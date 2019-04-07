@@ -44,3 +44,8 @@ class Menu( object ):
         self.screen.blit( self.background, ( 0, 0 ) )
         self.updateScreenOptionsFonts()
         pygame.display.update()
+
+        # deixar botoes usaveis
+        # add as novas funcionalidades dos botoes
+        # adicionar efeito de hover
+        
