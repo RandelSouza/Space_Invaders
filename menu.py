@@ -48,4 +48,5 @@ class Menu( object ):
         # deixar botoes usaveis
         # add as novas funcionalidades dos botoes
         # adicionar efeito de hover
+        # add function extras
         
