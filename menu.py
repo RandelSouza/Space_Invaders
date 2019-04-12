@@ -13,6 +13,8 @@ class Menu( object ):
         self.collors = { "white": (255, 255, 255), "green": (0, 255, 0) }
         self.options = []
         self.menuOptionsFonts()
+        self.options[0]["selected"] = 1
+        print self.options[0]["selected"]
 
     def renderFont( self, nameFont, collor ):
         return self.font.render(nameFont, True, collor)
@@ -50,4 +52,3 @@ class Menu( object ):
         # adicionar efeito de hover
         # add function extras
         # add function tutorial
-        
