@@ -41,7 +41,8 @@ class Menu( object ):
             print self.options[index]["font"], self.options[index]["selected"]
 
     def updateScreenOptionsFonts( self ):
-        for font in self.options:            
+        for font in self.options:
+            print font["font"]
             self.screen.blit( self.renderFont( font[ "font" ][ 0 ], font[ "font" ] [ 1 ] ), font[ "pos" ] )
 
     def drawAndUpdateMenu( self ):
