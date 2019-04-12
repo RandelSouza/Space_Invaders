@@ -2,11 +2,11 @@ import pygame, sys, os
 from setup import *
 from pygame.locals import *
 
-first = 0
-after = 1
 
 class Events(object):
+
     def __init__(self):
+        self.first = 0
         self.font =  pygame.font.Font('./score_board/scoreboard.ttf', 30)
         self.count = 0
         self.score = self.font.render("score: " + str(self.count), True, (0, 255, 0))
@@ -68,15 +68,15 @@ class Events(object):
     # mudar index e mudar cor da opcao do menu
     def eventKeyPressK_UP_menu( self , event, menu ):
         if event.key == pygame.K_UP:
-            menu.changeOption( first, 1 )
-            if first <= 3:
-                first += 1
-            if first > 3:
-                first = 0
+            pass
     # mudar index e mudar cor da opcao do menu
     def eventKeyPressK_DOWN_menu( self, event, menu ):
         if event.key == pygame.K_DOWN:
-            pass
+            menu.changeOption( self.first, 1 )
+            if self.first <= 3:
+                self.first += 1
+            if self.first > 3:
+                self.first = 0
 
     def eventKeyDownMenu(self, event, menu ):
         if event.type == pygame.KEYDOWN :
