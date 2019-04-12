@@ -27,7 +27,9 @@ class Menu( object ):
         collor = "green"
 
         for nameFont in fonts:
-            self.options.append( { "font" : self.renderFont( nameFont, self.collors[ collor ] ),
+            #self.options.append( { "font" : self.renderFont( nameFont, self.collors[ collor ] ),
+            #                        "pos" : ( posX, posY ), "selected": selected } )
+            self.options.append( { "font" : ( nameFont, self.collors[ collor ] ),
                                     "pos" : ( posX, posY ), "selected": selected } )
             posY += 100
 
@@ -39,9 +41,8 @@ class Menu( object ):
             print self.options[index]["font"], self.options[index]["selected"]
 
     def updateScreenOptionsFonts( self ):
-        for font in self.options:
-            print self.options
-            self.screen.blit( font[ "font" ], font[ "pos" ] )
+        for font in self.options:            
+            self.screen.blit( self.renderFont( font[ "font" ][ 0 ], font[ "font" ] [ 1 ] ), font[ "pos" ] )
 
     def drawAndUpdateMenu( self ):
         self.screen.blit( self.background, ( 0, 0 ) )

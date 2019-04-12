@@ -62,12 +62,12 @@ class Events(object):
             self.eventMouseButtonDown(event, shoot, X, Y, max)
             return main_game
 
-    # mudar index e mudar cor da opção do menu
+    # mudar index e mudar cor da opcao do menu
     def eventKeyPressK_UP_menu( self , event, menu ):
         if event.key == pygame.K_UP:
             menu.changeOption(1, 1)
 
-    # mudar index e mudar cor da opção do menu
+    # mudar index e mudar cor da opcao do menu
     def eventKeyPressK_DOWN_menu( self, event, menu ):
         if event.key == pygame.K_DOWN:
             pass
