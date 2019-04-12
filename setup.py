@@ -19,3 +19,5 @@ LIST_STRINGS = [ 'image/enemy_shoot_purple.png',
 'image/enemy_shoot_green.png',
 'image/enemy_shoot_blue2.png',
 'image/enemy_shoot_blue.png' ]
+
+MENU_OPTIONS = 4
