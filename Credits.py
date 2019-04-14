@@ -9,15 +9,22 @@ class Credits( object ):
         self.screen = pygame.display.set_mode( [ LARGURA, ALTURA ] )
         pygame.font.init()
 
-    def eventQuitCredits(self, event):
+    def eventQuitCredits( self, event ):
+        print event
+        
         if event.type == QUIT:
-            exit()
+            return 3
+
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_ESCAPE:
+                return 3
 
     def eventHandlerCredits( self ):
         for event in pygame.event.get():
-            eventQuitCredits(event)
+            return self.eventQuitCredits( event )
 
     def drawAndUpdateCredits( self ):
-        eventHandlerCredits()
-        self.screen.fill( (0, 0, 0) )
+        main_game = self.eventHandlerCredits()
+        self.screen.fill( ( 0, 0, 0 ) )
         pygame.display.update()
+        return main_game

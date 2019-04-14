@@ -33,7 +33,9 @@ while True:
 
     if main_game == 2:
         while True:
-            credits.drawAndUpdateCredits()
+            main_game = credits.drawAndUpdateCredits()
+            if main_game == 3:
+                break
             # nos creditos se o evento for sair main_game = 0
 
     if main_game == 1:
