@@ -50,7 +50,7 @@ class Menu( object ):
     def printOptions(self, index):
         nameFonte =self.options[index]["font"][0]
 
-        if  == "Exit":
+        if nameFont == "Exit":
             exit()
         if
     def drawAndUpdateMenu( self ):
