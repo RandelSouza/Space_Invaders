@@ -31,10 +31,10 @@ class Credits( object ):
             posY -= 100
 
     def updateScreenText( self ):
-            for text in self.text:
-                self.screen.blit( self.renderText( text[ "text" ], text[ "collor" ] ), (text[ "pos" ][ 0 ], text[ "pos" ][1]) )
-                text[ "pos" ] = ( text[ "pos" ][0], text[ "pos" ][1] - 0.1)
-                print text[ "pos" ]
+        for text in self.text:
+            self.screen.blit( self.renderText( text[ "text" ], text[ "collor" ] ), (text[ "pos" ][ 0 ], text[ "pos" ][1]) )
+            text[ "pos" ] = ( text[ "pos" ][0], text[ "pos" ][1] - 0.1)
+            print text[ "pos" ]
 
     def eventQuitCredits( self, event ):
         if event.type == QUIT:
