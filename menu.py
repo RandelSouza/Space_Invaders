@@ -56,7 +56,7 @@ class Menu( object ):
         if self.nameFont == "":
             pass
 
-        if self.nameFont == "":
+        if nameFont == "":
             pass
 
     def drawAndUpdateMenu( self ):
