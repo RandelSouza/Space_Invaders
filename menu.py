@@ -1,7 +1,6 @@
 from setup import *
 import pygame, sys, os
 from pygame.locals import *
-from Credits import *
 
 class Menu( object ):
     def __init__( self ):
@@ -16,7 +15,6 @@ class Menu( object ):
         self.menuOptionsFonts()
         #self.options[0]["selected"] = 1
         print self.options[0]["selected"]
-        self.credits = Credits()
 
     def renderFont( self, nameFont, collor ):
         return self.font.render(nameFont, True, collor)
