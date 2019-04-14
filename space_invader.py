@@ -9,6 +9,7 @@ from Enemy import *
 from Ship import *
 from menu import *
 from shot_enemy import *
+from Credits import *
 
 os.environ['SDL_VIDEO_CENTERED'] = '1'
 
@@ -19,6 +20,7 @@ shot = Shot()
 enemy = Enemy(0,0,0,0,0)
 events = Events()
 shotEnemy = ShotEnemy()
+credits = Credits()
 number = 20
 spriteEnemy = 1
 max_shot = 3
@@ -28,6 +30,9 @@ enemies_quantity = 0
 while True:
     main_game = events.eventHandlerMenu(main_game, menu)
     menu.drawAndUpdateMenu()
+
+    if main_game == 2:
+        while True:
 
     if main_game == 1:
         while True:
