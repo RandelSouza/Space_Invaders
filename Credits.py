@@ -9,12 +9,14 @@ class Credits( object ):
         self.screen = pygame.display.set_mode( [ LARGURA, ALTURA ] )
         self.text = []
         self.setText()
+        self.collors = { "white": (255, 255, 255), "green": (0, 255, 0) }
         pygame.font.init()
 
     def setText( self ):
         self.text = ["Game Programming - Randel Souza ALmeida",
                      "Game Design - Randel Souza Almeida",
                      "Picture Art - GameArt site (www.gameArt.com)"]
+
 
     def drawUpdateText( self ):
         pass

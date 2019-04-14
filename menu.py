@@ -14,7 +14,7 @@ class Menu( object ):
         self.options = []
         self.menuOptionsFonts()
         #self.options[0]["selected"] = 1
-        print self.options[0]["selected"]
+        #print self.options[0]["selected"]
 
     def renderFont( self, nameFont, collor ):
         return self.font.render(nameFont, True, collor)
