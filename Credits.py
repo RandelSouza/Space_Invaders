@@ -12,14 +12,29 @@ class Credits( object ):
         self.collors = { "white": (255, 255, 255), "green": (0, 255, 0) }
         pygame.font.init()
 
+    def renderText( self, nameText, collor ):
+        return self.font.render( nameText, True, collor )
+
     def setText( self ):
-        self.text = ["Game Programming - Randel Souza ALmeida",
+        text = [ "Game Programming - Randel Souza ALmeida",
                      "Game Design - Randel Souza Almeida",
-                     "Picture Art - GameArt site (www.gameArt.com)"]
+                     "Picture Art - GameArt site (www.gameArt.com)" ]
+        posX = 320
+        posY = ALTURA
 
+        for nameText in text:
+            self.text.append( { "text" : nameText, "pos" : ( posX, posY ), "collor" : self.collors[ "white" ] } )
+            posY -= 100
 
-    def drawUpdateText( self ):
-        pass
+    def updateScreenText( self ):
+        limit = LARGURA
+        while limit > 0:
+            for text in self.text:
+                posy = text[ "pos" ][1]
+                self.screen.blit( self.renderText( text[ "text" ], text[ "collor" ] ), (text[ "pos" ][ 0 ], posy ) )
+                posy += 1
+                limit += posy
+
     def eventQuitCredits( self, event ):
         if event.type == QUIT:
             return 3
@@ -35,5 +50,6 @@ class Credits( object ):
     def drawAndUpdateCredits( self ):
         main_game = self.eventHandlerCredits()
         self.screen.fill( ( 0, 0, 0 ) )
+        self.updateScreenText()        
         pygame.display.update()
         return main_game
