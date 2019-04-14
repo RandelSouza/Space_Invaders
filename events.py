@@ -99,8 +99,7 @@ class Events(object):
     def eventHandlerMenu( self, main_game, menu ):
         for event in pygame.event.get():
             self.eventQuitMenu( event )
-            if main_game == None:
-                main_game = self.eventMouseButtonDownMenu( event, main_game )
+            main_game = self.eventMouseButtonDownMenu( event, main_game )
 
             if main_game == None:
                 main_game = self.eventKeyDownMenu( event, menu, main_game)
