@@ -88,7 +88,7 @@ class Events(object):
     def eventKeyPressK_ENTER( self, event, menu ):
         if event.key == pygame.K_RETURN:
             if self.first >= 0 and self.first <= 3:
-                menu.printOptions(self.first)
+                menu.options(self.first)
 
     def eventKeyDownMenu(self, event, menu ):
         if event.type == pygame.KEYDOWN :
