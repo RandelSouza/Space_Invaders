@@ -53,7 +53,7 @@ class Menu( object ):
         if self.nameFont == "Exit":
             exit()
 
-        if self.nameFont == "":
+        if nameFont == "":
             pass
 
         if nameFont == "":
