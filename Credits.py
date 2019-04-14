@@ -3,4 +3,5 @@ import pygame, sys, os
 from pygame.locals import *
 
 class Credits(Object):
-    def __init__(self):
+    def __init__( self ):
+        self.init = pygame.init()
