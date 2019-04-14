@@ -2,9 +2,7 @@ import pygame, sys, os
 from setup import *
 from pygame.locals import *
 
-
 class Events(object):
-
     def __init__(self):
         self.first = -1
         self.font =  pygame.font.Font('./score_board/scoreboard.ttf', 30)
