@@ -51,7 +51,7 @@ class Menu( object ):
         nameFont = self.options[index]["font"][0]
 
         if nameFont == "Play":
-            pass
+            return 1
 
         if nameFont == "Settings":
             pass

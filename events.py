@@ -86,17 +86,17 @@ class Events(object):
     def eventKeyPressK_ENTER( self, event, menu ):
         if event.key == pygame.K_RETURN:
             if self.first >= 0 and self.first <= 3:
-                menu.executeOptions(self.first)
+                return menu.executeOptions(self.first)
 
     def eventKeyDownMenu(self, event, menu ):
         if event.type == pygame.KEYDOWN :
             self.eventKeyPressK_UP_menu( event, menu )
             self.eventKeyPressK_DOWN_menu( event, menu )
-            self.eventKeyPressK_ENTER( event, menu )
+            return self.eventKeyPressK_ENTER( event, menu )
 
     def eventHandlerMenu( self, main_game, menu ):
         for event in pygame.event.get():
-            self.eventKeyDownMenu( event, menu )
+            main_game = self.eventKeyDownMenu( event, menu )
             self.eventQuitMenu( event )
             main_game = self.eventMouseButtonDownMenu( event, main_game )
             return main_game
