@@ -7,11 +7,18 @@ class Credits( object ):
         self.init = pygame.init()
         self.font =  pygame.font.Font(None, 80)
         self.screen = pygame.display.set_mode( [ LARGURA, ALTURA ] )
+        self.text = []
+        self.setText()
         pygame.font.init()
 
+    def setText( self ):
+        self.text = ["Game Programming - Randel Souza ALmeida",
+                     "Game Design - Randel Souza Almeida",
+                     "Picture Art - GameArt site (www.gameArt.com)"]
+
+    def drawUpdateText( self ):
+        pass
     def eventQuitCredits( self, event ):
-        print event
-        
         if event.type == QUIT:
             return 3
 
