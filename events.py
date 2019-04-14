@@ -68,22 +68,22 @@ class Events(object):
     # mudar index e mudar cor da opcao do menu
     def eventKeyPressK_UP_menu( self , event, menu ):
         if event.key == pygame.K_UP:
-            menu.changeOption( self.first, 1 )
-            menu.changeOption( self.first + 1, 0 )
-            if self.first <= 4:
-                self.first -= 1
-            if self.first < 0:
-                self.first = 4
-    # mudar index e mudar cor da opcao do menu
-    def eventKeyPressK_DOWN_menu( self, event, menu ):
-        if event.key == pygame.K_DOWN:
-            menu.changeOption( self.first, 1 )
-            menu.changeOption( self.first-1, 0 )
+            menu.changeOption( self.first, 0 )
+            menu.changeOption( self.first + 1, 1 )
             if self.first <= 4:
                 self.first += 1
             if self.first > 4:
                 self.first = 0
-
+    # mudar index e mudar cor da opcao do menu
+    def eventKeyPressK_DOWN_menu( self, event, menu ):
+        if event.key == pygame.K_DOWN:
+            #menu.changeOption( self.first, 1 )
+            #menu.changeOption( self.first-1, 0 )
+            #if self.first <= 4:
+            #    self.first += 1
+            #if self.first > 4:
+            #    self.first = 0
+            pass
     def eventKeyDownMenu(self, event, menu ):
         if event.type == pygame.KEYDOWN :
             self.eventKeyPressK_UP_menu( event, menu )
