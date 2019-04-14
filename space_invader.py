@@ -32,8 +32,9 @@ while True:
     menu.drawAndUpdateMenu()
 
     if main_game == 2:
-        while True:()
+        while True:
             credits.drawAndUpdateCredits()
+            # nos creditos se o evento for sair main_game = 0
 
     if main_game == 1:
         while True:
