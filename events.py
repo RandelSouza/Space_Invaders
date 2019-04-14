@@ -6,7 +6,7 @@ from pygame.locals import *
 class Events(object):
 
     def __init__(self):
-        self.first = 0
+        self.first = 1
         self.font =  pygame.font.Font('./score_board/scoreboard.ttf', 30)
         self.count = 0
         self.score = self.font.render("score: " + str(self.count), True, (0, 255, 0))
@@ -69,24 +69,25 @@ class Events(object):
     def eventKeyPressK_UP_menu( self , event, menu ):
         if event.key == pygame.K_UP:
             menu.changeOption( self.first, 0 )
-            menu.changeOption( self.first-1,  1)
             if self.first <= 4:
                 self.first -= 1
             if self.first < 0:
                 self.first = 4
+            menu.changeOption( self.first,  1)
+
     # mudar index e mudar cor da opcao do menu
     def eventKeyPressK_DOWN_menu( self, event, menu ):
         if event.key == pygame.K_DOWN:
-            menu.changeOption( self.first, 1 )
-            menu.changeOption( self.first-1, 0 )
+            menu.changeOption( self.first, 0 )
             if self.first <= 4:
                 self.first += 1
             if self.first > 4:
                 self.first = 0
+            menu.changeOption( self.first, 1 )
 
     def eventKeyPressK_ENTER( self, event, menu ):
         if event.key == pygame.K_RETURN:
-            if self.first >= 0 or <= 4:
+            if self.first >= 0 and self.first <= 3:
                 menu.printOptions(self.first)
 
     def eventKeyDownMenu(self, event, menu ):
