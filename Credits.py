@@ -17,9 +17,12 @@ class Credits( object ):
         return self.font.render( nameText, True, collor )
 
     def setText( self ):
-        text = [ "Game Programming - Randel Souza ALmeida",
-                     "Game Design - Randel Souza Almeida",
-                     "Picture Art - GameArt site (www.gameArt.com)" ]
+        text = [
+                 "Game Programming - Randel Souza ALmeida",
+                 "Game Design - Randel Souza Almeida",
+                 "Picture Art - GameArt site (www.gameArt.com)",
+                 "                                    CREDITS" ]
+
         posX = 20
         posY = ALTURA + 300
 
@@ -30,8 +33,8 @@ class Credits( object ):
     def updateScreenText( self ):
             for text in self.text:
                 self.screen.blit( self.renderText( text[ "text" ], text[ "collor" ] ), (text[ "pos" ][ 0 ], text[ "pos" ][1]) )
-                text[ "pos" ] = ( text[ "pos" ][0], text[ "pos" ][1] - 0.2)
-                print tex[ "pos" ]
+                text[ "pos" ] = ( text[ "pos" ][0], text[ "pos" ][1] - 0.1)
+                print text[ "pos" ]
 
     def eventQuitCredits( self, event ):
         if event.type == QUIT:
