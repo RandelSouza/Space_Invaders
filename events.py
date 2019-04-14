@@ -103,5 +103,4 @@ class Events(object):
 
             if main_game == None:
                 main_game = self.eventKeyDownMenu( event, menu, main_game)
-
             return main_game
