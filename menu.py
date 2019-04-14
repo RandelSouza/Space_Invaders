@@ -48,7 +48,7 @@ class Menu( object ):
                 self.screen.blit( self.renderFont( font[ "font" ][ 0 ], font[ "font" ] [ 1 ] ), font[ "pos" ] )
 
     def printOptions(self, index):
-        print self.options[index]["font"]
+        print self.options[index]["font"][0]
 
     def drawAndUpdateMenu( self ):
         self.screen.blit( self.background, ( 0, 0 ) )
