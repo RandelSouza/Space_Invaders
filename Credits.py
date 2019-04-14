@@ -5,12 +5,13 @@ from pygame.locals import *
 class Credits( object ):
     def __init__( self ):
         self.init = pygame.init()
-        self.font =  pygame.font.Font(None, 80)
+        self.font =  pygame.font.Font( None, 50 )
         self.screen = pygame.display.set_mode( [ LARGURA, ALTURA ] )
         self.text = []
+        self.collors = { "white": (255, 255, 255), "green": ( 0, 255, 0 ) }
         self.setText()
-        self.collors = { "white": (255, 255, 255), "green": (0, 255, 0) }
         pygame.font.init()
+        self.limit = ALTURA
 
     def renderText( self, nameText, collor ):
         return self.font.render( nameText, True, collor )
@@ -19,21 +20,18 @@ class Credits( object ):
         text = [ "Game Programming - Randel Souza ALmeida",
                      "Game Design - Randel Souza Almeida",
                      "Picture Art - GameArt site (www.gameArt.com)" ]
-        posX = 320
-        posY = ALTURA
+        posX = 20
+        posY = ALTURA + 300
 
         for nameText in text:
             self.text.append( { "text" : nameText, "pos" : ( posX, posY ), "collor" : self.collors[ "white" ] } )
             posY -= 100
 
     def updateScreenText( self ):
-        limit = LARGURA
-        while limit > 0:
             for text in self.text:
-                posy = text[ "pos" ][1]
-                self.screen.blit( self.renderText( text[ "text" ], text[ "collor" ] ), (text[ "pos" ][ 0 ], posy ) )
-                posy += 1
-                limit += posy
+                self.screen.blit( self.renderText( text[ "text" ], text[ "collor" ] ), (text[ "pos" ][ 0 ], text[ "pos" ][1]) )
+                text[ "pos" ] = ( text[ "pos" ][0], text[ "pos" ][1] - 0.2)
+                print tex[ "pos" ]
 
     def eventQuitCredits( self, event ):
         if event.type == QUIT:
@@ -50,6 +48,6 @@ class Credits( object ):
     def drawAndUpdateCredits( self ):
         main_game = self.eventHandlerCredits()
         self.screen.fill( ( 0, 0, 0 ) )
-        self.updateScreenText()        
+        self.updateScreenText()
         pygame.display.update()
         return main_game
