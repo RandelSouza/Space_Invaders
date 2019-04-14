@@ -32,7 +32,8 @@ while True:
     menu.drawAndUpdateMenu()
 
     if main_game == 2:
-        while True:
+        while True:()
+            credits.drawAndUpdateCredits()
 
     if main_game == 1:
         while True:
