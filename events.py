@@ -74,29 +74,31 @@ class Events(object):
             menu.changeOption( self.first,  1)
 
     # mudar index e mudar cor da opcao do menu
-    def eventKeyPressK_DOWN_menu( self, event, menu ):
+    def eventKeyPressK_DOWN_menu( self, event, menu):
         if event.key == pygame.K_DOWN:
             menu.changeOption( self.first, 0 )
             if self.first <= 4:
                 self.first += 1
             if self.first > 4:
                 self.first = 0
-            return menu.changeOption( self.first, 1 )
+            menu.changeOption( self.first, 1)
 
-    def eventKeyPressK_ENTER( self, event, menu ):
+    def eventKeyPressK_ENTER( self, event, menu, main_game):
         if event.key == pygame.K_RETURN:
             if self.first >= 0 and self.first <= 3:
-                return menu.executeOptions(self.first)
+                main_game =  menu.executeOptions(self.first)
+                print main_game
+                return main_game
 
-    def eventKeyDownMenu(self, event, menu ):
+    def eventKeyDownMenu(self, event, menu, main_game):
         if event.type == pygame.KEYDOWN :
             self.eventKeyPressK_UP_menu( event, menu )
             self.eventKeyPressK_DOWN_menu( event, menu )
-            return self.eventKeyPressK_ENTER( event, menu )
+            return self.eventKeyPressK_ENTER( event, menu, main_game)
 
     def eventHandlerMenu( self, main_game, menu ):
         for event in pygame.event.get():
-            main_game = self.eventKeyDownMenu( event, menu )
+            main_game = self.eventKeyDownMenu( event, menu, main_game)
             self.eventQuitMenu( event )
             main_game = self.eventMouseButtonDownMenu( event, main_game )
             return main_game
