@@ -48,11 +48,17 @@ class Menu( object ):
                 self.screen.blit( self.renderFont( font[ "font" ][ 0 ], font[ "font" ] [ 1 ] ), font[ "pos" ] )
 
     def printOptions(self, index):
-        nameFonte =self.options[index]["font"][0]
+        nameFonte = self.options[index]["font"][0]
 
         if nameFont == "Exit":
             exit()
-        if
+
+        if nameFont == "":
+            pass
+
+        if nameFont == "":
+            pass
+
     def drawAndUpdateMenu( self ):
         self.screen.blit( self.background, ( 0, 0 ) )
         self.updateScreenOptionsFonts()
