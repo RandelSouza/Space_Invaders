@@ -8,7 +8,7 @@ class Credits( object ):
         self.font =  pygame.font.Font( None, 40 )
         self.screen = pygame.display.set_mode( [ LARGURA, ALTURA ] )
         self.text = []
-        self.collors = { "white" : (255, 255, 255), "green" : ( 0, 255, 0 ) }
+        self.collors = { "white" : (255, 255, 255)}
         self.setText()
         pygame.font.init()
         self.limit = ALTURA
