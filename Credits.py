@@ -34,7 +34,7 @@ class Credits( object ):
     def updateScreenText( self ):
         for text in self.text:
             self.screen.blit( self.renderText( text[ "text" ], text[ "collor" ] ), ( text[ "pos" ][ 0 ], text[ "pos" ][ 1 ] ) )
-            text[ "pos" ] = ( text[ "pos" ][ 0 ], text[ "pos" ][1] - 0.3)
+            text[ "pos" ] = ( text[ "pos" ][ 0 ], text[ "pos" ][ 1 ] - 0.3)
             if text[ "pos" ][1] <= -50:
                 text[ "pos" ] = ( text[ "pos" ][0], ALTURA + 300)
 
