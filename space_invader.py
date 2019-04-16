@@ -35,7 +35,7 @@ while True:
         while True:
             main_game = credits.drawAndUpdateCredits()
             if main_game == 3:
-                break            
+                break
     if main_game == 1:
         while True:
             if main_game == 0:

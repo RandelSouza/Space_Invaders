@@ -60,6 +60,5 @@ class Credits( object ):
     def drawAndUpdateCredits( self ):
         main_game = self.eventHandlerCredits()
         self.screen.fill( ( 0, 0, 0 ) )
-        self.updateScreenText()
-        pygame.display.update()
+        self.updateScreenText()        
         return main_game
