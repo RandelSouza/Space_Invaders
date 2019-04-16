@@ -18,7 +18,7 @@ class Credits( object ):
 
     def setText( self ):
         text = [
-                 "Game Logic - Randel "
+                 "Game Logic - Randel Souza "
                  "Game Programming - Randel Souza ALmeida",
                  "Game Design - Randel Souza Almeida",
                  "Site (https://opengameart.org/)",
