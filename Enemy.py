@@ -16,7 +16,8 @@ class Enemy(object):
         self.image3 = pygame.transform.scale(pygame.image.load("image/alien.png").convert_alpha(), (50,50))
         self.image4 = pygame.transform.scale(pygame.image.load("image/alien2.png").convert_alpha(), (50,50))
         self.rect = self.get_rect()
-        self.direction = 'right'
+        self.direction_right = 0
+        self.direction_left = 0
 
     def get_rect(self):
         return pygame.Rect(self.x, self.y, self.width, self.height)
@@ -54,27 +55,25 @@ class Enemy(object):
     def update_coordinate_enemy_right(self, enemy):
         enemy.x += enemy.speed
 
-        if enemy.x > LARGURA:
+        if enemy.x > LARGURA+400:
             enemy.y += 100
             #enemy.x = 0
-            self.direction = 'left'
 
-        if enemy.y >= 400:
-            enemy.y = 0
+        #if enemy.y >= 400:
+        #    enemy.y = 0
 
         return self.direction
 
     def update_coordinate_enemy_left(self, enemy):
         enemy.x -= enemy.speed
 
-        if enemy.x < 0:
+        if enemy.x < 0-400:
             enemy.y += 100
             #enemy.x = 0
-            self.direction = 'right'
 
-        if enemy.y >= 400:
-            enemy.y = 0
-            self.direction = 'right'
+#        if enemy.y >= 400:
+#            enemy.y = 0
+#            self.direction = 'right'
 
         return self.direction
 
@@ -86,9 +85,9 @@ class Enemy(object):
                 self.enemy_create_shot(shot_enemy, enemy.x, enemy.y)
 
                 if self.direction == 'right':
-                    self.direction = self.update_coordinate_enemy(enemy)
+                    self.direction = self.update_coordinate_enemy_right(enemy)
                 if self.direction == 'left':
-                    self.direction = self.update_coordinate_enemy(enemy)
+                    self.direction = self.update_coordinate_enemy_left(enemy)
 
                 index2 = enemy.get_rect().collidelist(BULLETS)
 
