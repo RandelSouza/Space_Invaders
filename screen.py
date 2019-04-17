@@ -11,7 +11,8 @@ class Screen(object):
         pygame.mixer.init()
         pygame.mixer.music.load("music/sound2.ogg")
         pygame.font.init()
-
+        print self.screen
+        
     def limites_tela(self, X, Y):
         if X <= -10: X = 702
         if X >= 704.99: X = 0
