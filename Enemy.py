@@ -18,6 +18,8 @@ class Enemy(object):
         self.rect = self.get_rect()
         self.direction_right = 0
         self.direction_left = 0
+        self.direction = 'right'
+
 
     def get_rect(self):
         return pygame.Rect(self.x, self.y, self.width, self.height)
@@ -53,11 +55,13 @@ class Enemy(object):
                 ship.heart_count -= 1
 
     def update_coordinate_enemy_right(self, enemy):
+        self.direction_left = 0
         enemy.x += enemy.speed
 
         if enemy.x > LARGURA+400:
             enemy.y += 100
             #enemy.x = 0
+            self.direction_right += 1
 
         #if enemy.y >= 400:
         #    enemy.y = 0
@@ -65,12 +69,14 @@ class Enemy(object):
         return self.direction
 
     def update_coordinate_enemy_left(self, enemy):
+        self.direction_right = 0
+
         enemy.x -= enemy.speed
 
         if enemy.x < 0-400:
             enemy.y += 100
             #enemy.x = 0
-
+            self.direction_left += 1
 #        if enemy.y >= 400:
 #            enemy.y = 0
 #            self.direction = 'right'
@@ -86,8 +92,12 @@ class Enemy(object):
 
                 if self.direction == 'right':
                     self.direction = self.update_coordinate_enemy_right(enemy)
+                    if self.direction_right == len(enemies):
+                        self.direction = 'left'
                 if self.direction == 'left':
-                    self.direction = self.update_coordinate_enemy_left(enemy)
+                    self.update_coordinate_enemy_left(enemy)
+                    if self.direction_right == len(enemies):
+                        self.direction = 'left'
 
                 index2 = enemy.get_rect().collidelist(BULLETS)
 
