@@ -94,10 +94,11 @@ class Enemy(object):
                     self.direction = self.update_coordinate_enemy_right(enemy)
                     if self.direction_right == len(enemies):
                         self.direction = 'left'
+                        
                 if self.direction == 'left':
                     self.update_coordinate_enemy_left(enemy)
-                    if self.direction_right == len(enemies):
-                        self.direction = 'left'
+                    if self.direction_left == len(enemies):
+                        self.direction = 'right'
 
                 index2 = enemy.get_rect().collidelist(BULLETS)
 
