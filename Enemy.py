@@ -60,7 +60,7 @@ class Enemy(object):
         if enemy.y >= 400:
             enemy.y = 0
 
-    def update_coordinate_enemy_right(self, enemy):
+    def update_coordinate_enemy_left(self, enemy):
         enemy.x += enemy.speed
 
         if enemy.x > LARGURA:
