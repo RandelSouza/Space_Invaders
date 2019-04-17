@@ -16,10 +16,6 @@ class Enemy(object):
         self.image3 = pygame.transform.scale(pygame.image.load("image/alien.png").convert_alpha(), (50,50))
         self.image4 = pygame.transform.scale(pygame.image.load("image/alien2.png").convert_alpha(), (50,50))
         self.rect = self.get_rect()
-        self.direction_right = 0
-        self.direction_left = 0
-        self.direction = 'right'
-
 
     def get_rect(self):
         return pygame.Rect(self.x, self.y, self.width, self.height)
@@ -54,52 +50,23 @@ class Enemy(object):
             #ship.sound2.play()
                 ship.heart_count -= 1
 
-    def update_coordinate_enemy_right(self, enemy):
-        self.direction_left = 0
+    def update_coordinate_enemy(self, enemy):
         enemy.x += enemy.speed
 
-        if enemy.x > LARGURA+400:
+        if enemy.x > LARGURA:
             enemy.y += 100
-            #enemy.x = 0
-            self.direction_right += 1
+            enemy.x = 0
 
         if enemy.y >= 400:
             enemy.y = 0
-
-        return self.direction
-
-    def update_coordinate_enemy_left(self, enemy):
-        self.direction_right = 0
-
-        enemy.x -= enemy.speed
-
-        if enemy.x < 0-400:
-            enemy.y += 100
-            #enemy.x = 0
-            self.direction_left += 1
-        if enemy.y >= 400:
-            enemy.y = 0
-#            self.direction = 'right'
-
-        return self.direction
 
     def update_enemies(self, screen, c, shoot, eventos, ship, shot_enemy):
-                
+        direcao = 1
+
         if len(enemies) != 0:
             for enemy in enemies:
                 self.enemy_create_shot(shot_enemy, enemy.x, enemy.y)
-
-                if self.direction == 'right':
-                    self.direction = self.update_coordinate_enemy_right(enemy)
-                    if self.direction_right == len(enemies):
-                        print self.direction_right
-                        self.direction = 'left'
-
-                if self.direction == 'left':
-                    self.update_coordinate_enemy_left(enemy)
-                    if self.direction_left == len(enemies):
-                        self.direction = 'right'
-
+                self.update_coordinate_enemy(enemy)
                 index2 = enemy.get_rect().collidelist(BULLETS)
 
                 if index2 != -1:
