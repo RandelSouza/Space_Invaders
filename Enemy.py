@@ -63,8 +63,8 @@ class Enemy(object):
             #enemy.x = 0
             self.direction_right += 1
 
-        #if enemy.y >= 400:
-        #    enemy.y = 0
+        if enemy.y >= 400:
+            enemy.y = 0
 
         return self.direction
 
@@ -77,15 +77,14 @@ class Enemy(object):
             enemy.y += 100
             #enemy.x = 0
             self.direction_left += 1
-#        if enemy.y >= 400:
-#            enemy.y = 0
+        if enemy.y >= 400:
+            enemy.y = 0
 #            self.direction = 'right'
 
         return self.direction
 
     def update_enemies(self, screen, c, shoot, eventos, ship, shot_enemy):
-        direcao = 1
-
+                
         if len(enemies) != 0:
             for enemy in enemies:
                 self.enemy_create_shot(shot_enemy, enemy.x, enemy.y)
@@ -93,8 +92,9 @@ class Enemy(object):
                 if self.direction == 'right':
                     self.direction = self.update_coordinate_enemy_right(enemy)
                     if self.direction_right == len(enemies):
+                        print self.direction_right
                         self.direction = 'left'
-                        
+
                 if self.direction == 'left':
                     self.update_coordinate_enemy_left(enemy)
                     if self.direction_left == len(enemies):
