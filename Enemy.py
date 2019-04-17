@@ -57,17 +57,26 @@ class Enemy(object):
         if enemy.x > LARGURA:
             enemy.y += 100
             #enemy.x = 0
+            self.direction = 'left'
+
         if enemy.y >= 400:
             enemy.y = 0
+
+        return self.direction
 
     def update_coordinate_enemy_left(self, enemy):
-        enemy.x += enemy.speed
+        enemy.x -= enemy.speed
 
-        if enemy.x > LARGURA:
+        if enemy.x < 0:
             enemy.y += 100
             #enemy.x = 0
+            self.direction = 'right'
+
         if enemy.y >= 400:
             enemy.y = 0
+            self.direction = 'right'
+
+        return self.direction
 
     def update_enemies(self, screen, c, shoot, eventos, ship, shot_enemy):
         direcao = 1
