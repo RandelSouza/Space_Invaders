@@ -51,7 +51,16 @@ class Enemy(object):
             #ship.sound2.play()
                 ship.heart_count -= 1
 
-    def update_coordinate_enemy(self, enemy):
+    def update_coordinate_enemy_right(self, enemy):
+        enemy.x += enemy.speed
+
+        if enemy.x > LARGURA:
+            enemy.y += 100
+            #enemy.x = 0
+        if enemy.y >= 400:
+            enemy.y = 0
+
+    def update_coordinate_enemy_right(self, enemy):
         enemy.x += enemy.speed
 
         if enemy.x > LARGURA:
@@ -66,10 +75,12 @@ class Enemy(object):
         if len(enemies) != 0:
             for enemy in enemies:
                 self.enemy_create_shot(shot_enemy, enemy.x, enemy.y)
+
                 if self.direction == 'right':
                     self.direction = self.update_coordinate_enemy(enemy)
                 if self.direction == 'left':
                     self.direction = self.update_coordinate_enemy(enemy)
+
                 index2 = enemy.get_rect().collidelist(BULLETS)
 
                 if index2 != -1:
