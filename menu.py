@@ -67,7 +67,7 @@ class Menu( object ):
         self.updateScreenOptionsFonts()
         pygame.display.update()
 
-        # deixar botoes usaveis
+        # deixar botoes usaveis yes
         # add as novas funcionalidades dos botoes
         # adicionar efeito de hover
         # add function extras
