@@ -11,7 +11,7 @@ class Events(object):
 
     def shootSound(self, shoot):
         shoot.sound.play()
-        
+
 
     def removeBulletShip(self, shoot, X, Y, max):
         if len(BULLETS) < max:
@@ -25,6 +25,7 @@ class Events(object):
     def eventKeyDown(self, event, shoot, X, Y, max):
         if event.type == pygame.KEYDOWN :
             self.eventKeyPressK_Space( event, shoot, X, Y, max)
+            
 
     def eventQuit(self, event):
         if event.type == QUIT:
