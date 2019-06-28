@@ -22,6 +22,7 @@ class Enemy(object):
         return pygame.Rect(self.x, self.y, self.width, self.height)
 
     def create_enemies(self, number):
+        # Tempo inicial
         start_t = time.time()
         global count, y2
         y2 = 0
@@ -33,7 +34,7 @@ class Enemy(object):
             enemyObject = Enemy(LARGURA/2 - 250 + (count * 50), y2, 50, 50, 0.8)
             enemies.append(enemyObject)
             count += 1
-
+        # Tempo final
         print time.time() - start_t
 
     def enemy_create_shot(self, shot_enemy, X, Y):
