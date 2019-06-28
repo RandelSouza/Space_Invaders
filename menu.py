@@ -27,8 +27,6 @@ class Menu( object ):
         collor = "green"
 
         for nameFont in fonts:
-            #self.options.append( { "font" : self.renderFont( nameFont, self.collors[ collor ] ),
-            #                        "pos" : ( posX, posY ), "selected": selected } )
             self.options.append( { "font" : ( nameFont, self.collors[ collor ] ),
                                     "pos" : ( posX, posY ), "selected": selected } )
             posY += 100
@@ -66,8 +64,3 @@ class Menu( object ):
         self.screen.blit( self.background, ( 0, 0 ) )
         self.updateScreenOptionsFonts()
         pygame.display.update()
-
-        # add as novas funcionalidades dos botoes
-        # adicionar efeito de hover
-        # add function extras
-        # add function tutorial
