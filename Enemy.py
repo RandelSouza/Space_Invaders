@@ -38,7 +38,7 @@ class Enemy(object):
         print time.time() - start_t
 
     def enemy_create_shot(self, shot_enemy, X, Y):
-        if len(BULLETS_ENEMY) < random.randint(1, 10):
+        if len(BULLETS_ENEMY) < random.randint(1, 2):
             BULLETS_ENEMY.append(pygame.Rect(X+16, Y-5, 25, 50))
             shot_enemy.sound.play(0)
 
