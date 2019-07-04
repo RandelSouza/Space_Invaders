@@ -50,7 +50,7 @@ class Enemy(object):
 
             if ship.heart_count >= 1:
                 ship.heart_count -= 1
-                ship.sound2.play(1)
+                ship.sound2.play(0)
 
     def update_coordinate_enemy(self, enemy):
         enemy.x += enemy.speed
