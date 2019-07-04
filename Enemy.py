@@ -49,7 +49,7 @@ class Enemy(object):
             BULLETS_ENEMY.remove(BULLETS_ENEMY[collide])
 
             if ship.heart_count >= 1:
-            #ship.sound2.play()
+                ship.sound2.play()
                 ship.heart_count -= 1
 
     def update_coordinate_enemy(self, enemy):
