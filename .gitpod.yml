@@ -1,3 +1,9 @@
+image: gitpod/workspace-full-vnc
+ports:
+  - port: 5900
+    onOpen: ignore
+  - port: 6080
+    onOpen: open-preview
 tasks:
-  - init: pip install --upgrade pip && pip install .
-  command: apt-get install pygame
+  - init: pip install --upgrade pip && pip install . && pip install pygame
+    command: python space_invader.py
